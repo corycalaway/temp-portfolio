@@ -1,30 +1,58 @@
+/* background gradiant */
 body{
-
-background: rgb(181,55,242);
-background: linear-gradient(90deg, rgba(181,55,242,1) 0%, rgba(138,43,226,1) 50%, rgba(60,185,252,1) 100%);
+/* background: rgb(116,167,48); */
+/* background: linear-gradient(90deg, rgba(116,167,48,1) 0%, rgba(157,190,118,1) 50%, rgba(235,237,207,1) 100%); */
+background: #EBEDCF;
 }
 
+
+/* navigation tabs */
 .nav-align {
   display: flex;
-  justify-content: flex-end;
   list-style-type: none;
   gap: 1em;
 }
 
+/* navigation borders/boxes */
 .nav-item {
   padding: 10px;
-  border: 10px groove #120052;
+  border: 10px groove #ECCA11;
   border-radius: 40px 5px 40px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-text {
   font-family: 'AvaraBold', 'Impact', 'Arial Black';
-  padding: 20px;
+  font-size: 15px;
 }
 
 .title-adjust {
   display: flex;
-  
+  justify-content: space-between;
+}
+
+/* name/title displayed */
+.title-display {
+  -moz-transform: scale(0.9) rotate(306deg) translate(-50px, 30px);
+  -webkit-transform: scale(0.9) rotate(306deg) translate(-50px, 30px);
+  -o-transform: scale(0.9) rotate(306deg) translate(-50px, 30px);
+  -ms-transform: scale(0.9) rotate(306deg) translate(-50px, 30px);
+  transform: scale(0.9) rotate(306deg) translate(-50px, 30px);
+}
+
+.title-size {
+  font-size: 30px;
+  font-family: 'AvaraBold', 'Impact', 'Arial Black';
+  border-bottom: 10px groove #ECCA11;
+  border-radius: 40px 10px;
+}
+
+.personal-data-format {
+  position: relative;
+  left: 10em;
+  width: 50%;
 }
 
 
@@ -33,3 +61,76 @@ background: linear-gradient(90deg, rgba(181,55,242,1) 0%, rgba(138,43,226,1) 50%
 #B537F2
 #8A2BE2
 #120052 */
+
+/* Color Pallete*/
+/* #436904
+#74A730
+#9DBE76
+#EBEDCF
+#ECDF60
+#ECCA11 */
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+
+@media only screen and (max-width: 900px){
+	.title-size {
+  font-size: 15px;
+  }
+ 
+  .nav-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 780px){
+	/*Small smartphones [325px -> 425px]*/
+  .title-size {
+    font-size: 10px;
+  }
+  .nav-text {
+    font-size: 8px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+
+  .title-size {
+    font-size: 25px;
+  }
+
+  .nav-text {
+    font-size: 15px;
+  }
+
+  .title-display {
+    transform: unset
+  }
+
+  .title-adjust {
+    display: block;
+    text-align: center;
+
+  }
+
+  .personal-data-format {
+    font-size: 12px;
+    width: 75%;
+    position: unset;
+    left: unset;
+    
+  }
+
+  .about-screen {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-align {
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

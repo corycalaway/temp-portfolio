@@ -8,8 +8,10 @@ const Header = (props) => {
     return (
         <header>
             <section className="title-adjust">
-            <h1>
+            <h1 className="title-display">
+                <a className="title-size">
                 Cory Calaway
+                </a>
             </h1>
         
 
