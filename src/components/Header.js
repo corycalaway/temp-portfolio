@@ -10,8 +10,8 @@ const Header = (props) => {
             <section className="title-adjust">
             <h1 className="title-display">
                 <a className="title-size">
-                Cory Calaway
-                </a>
+                Cory Calaway 
+                </a> {' '}
             </h1>
         
 
